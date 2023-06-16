@@ -1,0 +1,617 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:regular,700&display=swap);
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  cursor: url(img/cursor-1.png), auto;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #fff;
+  color: var(--primary-color);
+  /* cursor: url(img/cursor-1.png), auto; */
+}
+
+[class*="__container"] {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+[class*="__container"] {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ======================================================================================== */
+:root {
+  --primary-color: #262a81;
+}
+
+/* ======================================================================================== */
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primary-color);
+  border-color: rgba(38, 43, 130, 0.5);
+}
+.logo {
+  max-width: 250px;
+  object-fit: cover;
+  height: 150px;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.menu__link {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.menu__link:hover {
+  text-decoration: underline;
+}
+.socs-items {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.soc-item img {
+  max-width: 30px;
+  height: 30px;
+}
+.shopping-cart-block {
+  position: relative;
+}
+#quantity {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 55px;
+  font-weight: 700;
+  color: salmon;
+  -webkit-text-stroke: 1.5px #262a81;
+}
+.shopping-cart {
+  max-width: 50px;
+  height: 50px;
+}
+
+/* ======================================================================================== */
+.page__main {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--primary-color);
+  border-color: rgba(38, 43, 130, 0.5);
+}
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-size: 60px;
+  font-weight: 700px;
+  text-align: center;
+  max-width: 1000px;
+  -webkit-text-stroke: 1.5px #57597a;
+}
+.page__main h2 {
+  padding-top: 70px;
+  font-size: 35px;
+  align-self: flex-start;
+  padding-bottom: 40px;
+}
+.popular-ways__block-items {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 50px;
+}
+.popular-ways__block-item1,
+.popular-ways__block-item2,
+.popular-ways__block-item3,
+.popular-ways__block-item4 {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+}
+.popular-ways__block-item:hover {
+  text-decoration: underline;
+}
+.popular-ways__block-item1 p,
+.popular-ways__block-item2 p,
+.popular-ways__block-item3 p,
+.popular-ways__block-item4 p {
+  font-size: 20px;
+  font-weight: 700;
+}
+.popular-ways__block-item1 img,
+.popular-ways__block-item2 img,
+.popular-ways__block-item3 img,
+.popular-ways__block-item4 img {
+  max-width: 30px;
+  height: 25px;
+}
+.ukraine-img {
+  max-width: 50px;
+  height: 50px;
+}
+
+/* ======================================================================================== */
+.page__choose-ticket {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--primary-color);
+  border-color: rgba(38, 43, 130, 0.5);
+}
+.choose-ticket__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose-way-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 700;
+  column-gap: 100px;
+  padding-bottom: 20px;
+}
+.choose-way-block-from,
+.choose-way-block-to {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.choose-way-block input {
+  border: 1px solid var(--primary-color);
+  padding: 15px 50px 15px 10px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 25px;
+}
+.choose-way-block img {
+  max-width: 100px;
+  height: 60px;
+}
+.choose-cities-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 70px;
+  font-size: 18px;
+}
+.choose-cities {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: color 0.2s ease 0s;
+}
+.choose-cities p:hover {
+  color: #6066dc;
+}
+.choose-date-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.choose-date-block-days {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  text-decoration: underline;
+}
+.choose-date-block-days p {
+  transition: color 0.2s ease 0s;
+}
+.choose-date-block-days p:hover {
+  color: #6066dc;
+}
+.choose-date-block input {
+  border: 1px solid var(--primary-color);
+  padding: 15px 50px 15px 10px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  max-width: 400px;
+}
+.choose-ticket-button {
+  font-size: 22px;
+  border: 5px solid var(--primary-color);
+  padding: 10px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: var(--primary-color);
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+}
+.choose-ticket-button:hover {
+  border: 5px solid var(--primary-color);
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+/* ======================================================================================== */
+.page__choose-seats {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid var(--primary-color);
+  border-color: rgba(38, 43, 130, 0.5);
+  display: none;
+}
+.chosen-options {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.way-option,
+.date-option {
+  border: 1px solid var(--primary-color);
+  padding: 15px 50px 15px 10px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  max-width: 400px;
+}
+.train-map {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 5px solid var(--primary-color);
+  border-radius: 40px;
+  margin-top: 70px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 40px;
+}
+.train-map::before {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 20px;
+  width: 1px;
+  left: 70px;
+  bottom: 0;
+}
+.train-map::after {
+  content: "";
+  position: absolute;
+  background-color: var(--primary-color);
+  height: 20px;
+  width: 1px;
+  right: 70px;
+  bottom: 0;
+}
+.train-map img {
+  max-width: 50px;
+  height: 50px;
+}
+.passenger-img1 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.coupe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-right: 1px solid #262a81;
+  border-left: 1px solid #262a81;
+  font-size: 30px;
+  gap: 10px 30px;
+  padding: 10px;
+}
+.coupe p {
+  background-color: rgb(200, 200, 200);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 60px;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+  font-size: 30px;
+  row-gap: 10px;
+  padding: 20px;
+}
+.coupe p:hover {
+  color: rgb(255, 255, 255);
+  background-color: var(--primary-color);
+}
+.passenger-img2 {
+  position: absolute;
+  right: 1px;
+  top: 10px;
+}
+.book-block {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.calculate-block {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.calculate-block p {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+#book {
+  font-size: 22px;
+  border: 5px solid var(--primary-color);
+  padding: 10px 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: var(--primary-color);
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+}
+#book:hover {
+  border: 5px solid var(--primary-color);
+  color: #fff;
+  background-color: var(--primary-color);
+}
+
+/* ======================================================================================== */
+.booked-ticket {
+  padding-bottom: 70px;
+  display: none;
+}
+.booked-ticket__container {
+  max-width: 700px;
+  margin: auto 0;
+}
+.booked-ticket__items {
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.booked-ticket__item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.booked-ticket-header {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+h2 {
+  font-size: 60px;
+  font-weight: 700px;
+  max-width: 1000px;
+  -webkit-text-stroke: 1.5px #57597a;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+.pHeader {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (max-width: 1300px) {
+  .choose-way-block,
+  .choose-way-block-from,
+  .choose-way-block-to {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .choose-way-block {
+    padding-bottom: 50px;
+  }
+  .menu__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .header__container {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .shopping-cart-block {
+    padding-top: 20px;
+  }
+  #quantity {
+    top: -5%;
+  }
+  .logo {
+    height: 100px;
+    object-fit: fill;
+    max-width: 300px;
+  }
+  .socs-items {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+  h1 {
+    font-size: 45px;
+  }
+  .page__main h2 {
+    align-self: center;
+  }
+  .popular-ways__block-items {
+    gap: 30px 30px;
+  }
+  .choose-way-block-from,
+  .choose-way-block-to {
+    row-gap: 20px;
+  }
+  #form {
+    position: relative;
+  }
+  .choose-way-block-from {
+    padding-bottom: 30px;
+  }
+  .choose-seats__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  #choose-cities-left {
+    position: absolute;
+    top: 160px;
+    left: 0;
+  }
+  .chosen-options {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .coupe {
+    border-top: 1px solid #262a81;
+    border-bottom: 1px solid #262a81;
+    gap: 20px 10px;
+  }
+  .coupe p {
+    padding: 5px;
+    row-gap: 5px;
+    font-size: 20px;
+  }
+  .train-map {
+    flex-direction: column;
+    max-width: 230px;
+    border: 5px solid var(--primary-color);
+    border-radius: 40px;
+    margin-top: 50px;
+    padding-top: 60px;
+    padding-left: 40px;
+    padding-right: 0;
+    padding-bottom: 70px;
+  }
+  .train-map img {
+    max-width: 40px;
+  }
+  .train-map::before {
+    height: 1px;
+    width: 30px;
+    left: 0;
+    top: 60px;
+  }
+  .train-map::after {
+    height: 1px;
+    width: 30px;
+    left: 0;
+    bottom: 70px;
+    transform: translate(45deg);
+  }
+  .passenger-img2 {
+    top: 96%;
+    right: 75%;
+  }
+  .booked-ticket {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .booked-ticket-header {
+    font-size: 25px;
+  }
+  .pHeader {
+    font-size: 23px;
+  }
+  .booked-ticket__items {
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 460px) {
+  h1 {
+    font-size: 35px;
+  }
+  .page__main h2 {
+    font-size: 25px;
+  }
+  .coupe p {
+    padding: 2.5px;
+  }
+  .coupe {
+    padding: 5px;
+    gap: 15px 10px;
+  }
+  .train-map::before,
+  .train-map::after {
+    width: 20px;
+  }
+  .passenger-img2 {
+    top: 94%;
+  }
+}
